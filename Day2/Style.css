@@ -1,0 +1,74 @@
+body {
+  /* background-image: url(https://img.freepik.com/premium-vector/background-illustration-rice-fields-morning_642172-840.jpg?size=626&ext=jpg&ga=GA1.1.1285231242.1706065084&semt=sph);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed; */
+
+  background: linear-gradient(to right, );
+}
+
+.selector-container > h1 {
+  color: red;
+}
+
+div h1 {
+  color: dodgerblue;
+}
+
+.selector-container > h1:hover {
+  color: yellow;
+}
+
+h1::after {
+  content: "  After";
+  color: blue;
+}
+
+div h1:hover::before {
+  content: "Before";
+  color: green;
+}
+
+.attribute-selector {
+  & a {
+    color: red;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.table-section {
+  margin-top: 25px;
+  & table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0px auto;
+    border-radius: 15px;
+  }
+
+  & th {
+    background-color: rgb(32, 156, 152);
+    color: whitesmoke;
+  }
+
+  & tbody > tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  & tbody > tr:nth-child(odd) {
+    background-color: rgb(168, 167, 167);
+    color: white;
+  }
+
+  & tbody > tr:hover {
+    background-color: #999;
+    color: white;
+  }
+
+  & th,
+  td {
+    padding: 10px;
+    /* border: 1px solid black; */
+  }
+}
